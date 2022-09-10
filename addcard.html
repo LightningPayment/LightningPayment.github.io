@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5fd4a91fa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Add Card</title>
+</head>
+<body>
+    
+    <div class="logo">
+        <h1>Loose Change</h1>
+    </div>
+    <div class="menu-title">
+        <div class="menu-word">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="menu-word">
+            <a href="cardmenblank.html">Cards</a>
+        </div>
+        <div class="menu-word">
+            <a href="blankbalance.html">Balance</a>
+        </div>
+        <div class="menu-word">
+            <a href="about.html">About</a>
+        </div>
+        
+    </div>
+    <div class="selector-menu">
+        <a href="index.html"><i class="fas fa-solid fa-house fa-2x" alt="Home"></i></a>
+        <a href="cardmenblank.html"><i class="fas fa-regular fa-credit-card fa-2x" alt="Cards"></i></a>
+        <a href="blankbalance.html"><i class="fas fa-solid fa-scale-balanced fa-2x" alt="Balance"></i></a>
+        <a href="about.html"><i class="fas fa-solid fa-question fa-2x" alt="About"></i></a>
+    </div>
+    
+
+    <form action="cardmenu.html" method="GET">
+        <div class="in-enter">
+            <h2><p>Please enter your card information below</p></h2>
+            <br/><br/>
+            <h3><p>Card Type:</p><h3>
+            <p><input type="text", name = "type", id="type", placeholder="Visa", required></p>
+            <!--consider using the select brackets here instead. goes with options brackets-->
+            <br/>
+
+            <h3><p>Card Number:</p><h3>
+            <p><input type="password", name = "number", id="number", placeholder="1234567890", required></p>
+
+            <br/>
+
+            <h3><p>Security Code:</p><h3>
+            <p><input type="password", name = "code", id="code", placeholder="123", required></p>
+
+            <br/>
+
+            <h3><p>Expiration Date:</p><h3>
+            <p><input type="date", name = "date", id="date", placeholder="01/23", required></p>
+
+            <br/>
+
+            <button type="submit", onclick="entervals()">Add Card</button>
+            <button type="reset">Reset</button>
+
+            <script>
+                function entervals() {
+                    var typeval = document.getElementByID("usertype").value;
+                    var numval = document.getElementByID("usernum").value;
+                    var codeval = document.getElementByID("usercode").value;
+                    var userval = document.getElementByID("userdate").value;
+
+                
+                }
+            </script>
+
+        </div>
+    </form>
+    <form action="cardmenu.html">
+        <br/>
+        <button type="submit">Demo Cards</button>
+    </form>
+
+
+
+</body>
+</html>
